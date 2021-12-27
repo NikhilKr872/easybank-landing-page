@@ -27,6 +27,10 @@ header{
     width:100vw;
 }
 
+.logo{
+    padding-left: 9%;
+}
+
 .navigation li{
     display: inline-block;
     
@@ -59,8 +63,21 @@ header{
     outline:none;
     border:none;
     background: transparent;
+    position: relative;
     cursor: pointer;
+    bottom: 5px; 
 }
+.close-img{
+    opacity: 0;
+    position: absolute;
+    
+}
+.ham-img{
+    opacity: 1;
+    position: absolute;
+    
+}
+
 
 span,p{
     color:hsl(233, 8%, 62%);
@@ -82,6 +99,7 @@ span,p{
     flex-direction: column;
     width:70%;
     transform: translate(40%,-40%);
+    padding-top: 100%;
 }
 
 .request_invite-btn{
@@ -305,11 +323,15 @@ footer ul {
     .active{
         opacity: 1;
     }
+    
 
     .dropdown-toggle{
         display: block;
     }
-
+    
+    .d{
+        display: none;
+    }
     .details{
         all:unset;
         display: flex;
@@ -350,7 +372,7 @@ footer ul {
     .reason{
         padding: 40px;
         width:100vw;
-
+        padding-left: 0;
     }
 
     .reason .why_list{
@@ -369,6 +391,11 @@ footer ul {
 
     .latest-articles {
         flex-direction: column-reverse;
+        
+    }
+
+    .latest-articles h1{
+        text-align: center;
     }
 
     .articles{
